@@ -1,0 +1,66 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="form">
+    <form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+    <label>First Name</label>
+    <input type="text"  name="fname" ngModel #v1><br>
+
+    <label>Middle Name</label>
+    <input type="text"  name="mname" ngModel #v2><br>
+  
+    <label>Last Name</label>
+    <input type="text"  name="lname" ngModel #v3><br>
+
+     <label>Contact No.</label>
+    <input type="Contact" pattern="[0-9]{10}" name="cno" ngModel #v4><br>
+    
+    <label>Email Address</label>
+    <input type="email" name="email" ngModel #v5><br>
+
+     <label>Birthdate</label>
+    <input type="date"  name="bdate" ngModel #v6><br>
+
+
+
+    <label>City</label> 
+                <select name="city" ngModel #v7>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nagpure</option>
+                    <option>Banglore</option>
+                    <option>Indore</option>
+                </select><br>
+
+     <label>Address</label>
+    <input type="Address"  name="add" ngModel #v8><br>           
+
+                <label>Gender</label> 
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Male<br>
+
+    <button type="submit"><b>Submit</b></button>
+    <button (click)="onReset(userForm)"><b>Reset</b></button>
+  </form>
+</div>
+
+
+
+<div style="overflow-x:auto;">
+  <table style="text-align: center;">
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email Id</th>
+        <th>City</th>
+        <th>Contact</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>{{userForm.controls['fname'].value}}</td>
+        <td>{{userForm.controls['lname'].value}}</td>
+        <td>{{userForm.controls['email'].value}}</td>
+        <td>{{userForm.controls['city'].value}}</td>
+        <td>{{userForm.controls['cno'].value}}</td>
+        <td>{{userForm.controls['add'].value}}</td>
+    </tr>
+    </table>
+</div>

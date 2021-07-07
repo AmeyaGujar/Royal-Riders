@@ -1,0 +1,29 @@
+nav ul{
+    text-align: center;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+  }
+  
+  nav ul li p{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  button {
+    color: white;
+    background-color: rgb(65, 64, 64);
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #7cffff; /* Green */
+    color: rgb(77, 65, 73);
+  }

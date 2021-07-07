@@ -1,0 +1,74 @@
+.form input{
+    width:50%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+  }
+  
+  .form{
+    padding-top:50px;
+    margin: 60px auto;
+    text-align: center;
+    background-color: rgba(125,125,125,0.50);
+    max-width: 40.5em;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    font-family:'Montserrat',sans-serif;
+  }
+  
+  .form input:focus{
+    border-bottom:2px solid #78788c;
+  }
+  
+  .form button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-size: 20px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background: rgba(77, 243, 221, 0.5);
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+  }
+  .form button:hover{
+    background:#78788c;
+    color:#fff;
+  }
+  
+  .display{
+    margin: 30px;
+    background-color: rgba(125,125,125,0.50);
+    max-width: 40.5em;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+  }
+  
+  table{
+      width: 900px;
+      height: 200px;
+      background-color: rgba(105, 105, 105, 0.5);
+      margin-top: 80px;
+      margin-left:auto; 
+      margin-right:auto;
+      border:2px groove blue;    
+  }
+  td,th{
+      border:2px groove rgb(209, 59, 255);    
+  }
+  th{
+      background-color: rgb(255, 66, 104);
+      color: whitesmoke;
+  }
+  tr{
+      color:rgb(255, 255, 255);
+      background: transparent;
+      font-weight: bold;
+  }
